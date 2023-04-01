@@ -418,27 +418,6 @@ function addChangeAddsQuantity() {
   }
 }
 
-/* function reserAdds() {
-  let cart = verifyExistCart();
-  if (cart) {
-    let { additionalItems } = cart;
-  	
-    additionalItems.forEach((item) => {
-      const pizzaContainer = document.querySelector(".info__additional");
-      const adds__obj = pizzaContainer.querySelectorAll(".adds__obj");
-      adds__obj.forEach((cntr, index) => {
-        const id = cntr.getAttribute("data-id");
-        document.getElementById(id).checked = false
-      	
-        let pizza__counter = cntr.querySelector(".pizza__counter");
-        let counter = pizza__counter.querySelector("[data-counter]");
-      	
-        counter.innerText = 1
-      });
-    });
-  }
-} */
-
 function clearCart() { }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -650,5 +629,3 @@ function prepareForm() {
 
 
 
-//localStorage.removeItem("cart");
-//localStorage.removeItem("favs");

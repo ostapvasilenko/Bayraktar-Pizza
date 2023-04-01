@@ -105,3 +105,12 @@ window.addEventListener('click', function (event) {
   }
 
 });
+
+
+// Плавне прокручування кнопки Замовити
+var myButton = document.getElementById("button");
+
+myButton.addEventListener("click", function () {
+  var element = document.getElementById("menu");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+});
